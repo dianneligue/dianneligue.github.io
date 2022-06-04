@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display&family=Poppins&family=Source+Sans+Pro&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display&family=Poppins&family=Source+Sans+Pro&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("fontawesome-all.min.css");
 
 /*
@@ -155,7 +156,7 @@ input, select, textarea {
 
 	a {
 		color: inherit;
-		border-bottom: solid 1px rgba(128, 128, 128, 0.15);
+		/* border-bottom: solid 1px rgba(128, 128, 128, 0.15); */
 		text-decoration: none;
 		-moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -3314,22 +3315,27 @@ ul.icons > li {
 	margin-top: 3rem;
 }
 #about-me article {
-	flex-basis: calc(50% - 1rem);
+	flex-basis: 100%;
 	display: flex;
-	border: .5px solid #244822;
+	/* border: .5px solid #244822; */
 	flex-direction: column;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 	margin-bottom: 0;
 }
 #about-me article .title {
 	flex-basis: 10%;
 	padding: 1rem 2rem;
 	color: white;
-	background: #244822;
+	/* background: #244822; */
 	border-radius: 10px 10px 0 0 ; 
 }
 #about-me article .title h3 {
-	color: white;
+	color: #244822;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+#about-me .highlight {
+  margin-bottom: 1rem;
 }
 #about-me article .content {
 	flex-basis: 70%;
@@ -3343,8 +3349,22 @@ ul.icons > li {
 	display: block;
 }
 #about-me article .content iframe {
-	margin-top: 1rem;
+	/* margin-top: 1rem; */
 	width: 100%;
+  height:100%;
+}
+#about-me .workexp {
+  list-style-type: none;
+  padding-left: 0;
+}
+#about-me .workexp li {
+  margin-bottom: .5rem;
+}
+#about-me .workexp li a {
+  border: none;
+}
+#about-me .workexp li a:hover {
+  background: #24482225;
 }
 #about-me article .content .highlight {
 	font-size: 1.2rem;
@@ -3366,7 +3386,10 @@ ul.icons > li {
 	margin: 1rem 0;
 }
 #about-me .key .cont {
-	flex-basis: 15%;
+	flex-basis: 12%;
+}
+#about-me .padtop {
+	padding-top: 2%;
 }
 #about-me .key .circle {
 	display: flex;
@@ -3387,6 +3410,51 @@ ul.icons > li {
 }
 #about-me a:hover {
 	color: #244822;
+}
+#about-me .subcontent {
+  flex-basis: 50%;
+  height: 500px;
+}
+#about-me .work {
+  display: flex;
+  gap: 2rem;
+}
+#about-me .resint {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center ;
+  background: #f0f4f4;
+  width: 22%;
+  aspect-ratio: 1/1;
+  padding: 2rem;
+  text-align: center;
+  color: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#about-me ol.res {
+  display: flex;
+  justify-content: space-between;
+}
+#about-me ol.res img {
+  max-width: 50%;
+  height: auto;
+}
+#about-me .achievements {
+	display: flex;
+}
+#about-me .achievements > div {
+  flex-basis: 50%;
+}
+#about-me .image img, #about-me .image {
+  margin: 0;
+}
+/* Carousel */
+#banner.carouselTitle {
+  background: #f0f4f4;
+}
+.carousel {
+  margin-bottom: 5rem;
 }
 /* Affiliations */
 .affiliations {
@@ -3657,25 +3725,26 @@ h3.title {
     line-height: 1.25em;
 }
 .trainings p {
-    font-size: 1rem;
+    font-size: .9rem;
     line-height: 1.4;
+    margin-bottom: 2rem;
 }
 .trainings span {
 	border: 1px solid #244822;
 	border-radius: 5px;
-	padding: .1rem .5rem;
+	padding: .2rem .5rem;
 	font-size: .8rem;
 	color: #244822;
 	line-height: 1rem;
-	margin: .5rem 0;
+	margin: 1rem 0;
 	display: block;
 	width: fit-content;
 }
 .trainings .photos {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	gap: 1rem;
+  justify-content: flex-start;
+  gap: 2rem;
 }
 .trainings .card {
 	flex-basis: 30%;
