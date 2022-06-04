@@ -3236,6 +3236,10 @@ body.homepage #header {
   z-index: -1;
   border-radius: 10% 0 0 0;
 }
+.hero ul.icons li a {
+  width: auto;
+  height: auto;
+}
 .hero .img::before {
   content: '';
   position: absolute;
@@ -3256,12 +3260,13 @@ ul.icons {
 	background: none;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0;
 }
 ul.icons > li {
-  width: 80px;
-  text-align: center;
+  width: 60px;
+  text-align: left;
 }
 .icons .label {
 	display: none;
@@ -3476,8 +3481,15 @@ ul.icons > li {
 }
 .education .overview .logo {
 	flex-basis: 20%;
-	margin-right: 2rem;
+  margin: auto;
+  margin-right: 2rem;
+  margin-top: 1rem;
 	padding: 1rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+.education .overview .details {
+	flex-basis: 80%;
 }
 .education .details li {
   font-size: 1rem;
@@ -3630,6 +3642,9 @@ h3.title {
 	display: flex;
 	gap: 2rem;
 }
+.extensions .smm p {
+	font-size: 1rem;
+}
 .extensions .main {
 	border: 1px solid #244822;
 	border-radius: 5px;
@@ -3675,9 +3690,10 @@ h3.title {
 }
 .extensions .ext {
 	flex-basis: calc(50% - 1rem);
-	border: 1px solid #2a3f6d;
+	border: .5px solid #cccccc;
 	border-radius: 5px;
 	padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
 }
 .extensions .year-time, .extensions .pos {
 	font-size: 1rem;
@@ -3704,6 +3720,9 @@ h3.title {
 #footer .icons .soc-icons{
 	color: rgb(220, 220, 220);
 }
+#footer .icons {
+  justify-content: center;
+}
 /* Helper */
 .img-fluid {
 	max-width: 100%;
@@ -3713,6 +3732,16 @@ h3.title {
 	font-size: 2rem;
 	margin-top: 1rem;
 	color: #650f1c;
+}
+.lower {
+  text-transform: lowercase;
+}
+.linkHighlight:hover {
+  background: #24482225;
+  color: inherit;
+}
+strong {
+  /* font-weight: bold; */
 }
 /* Trainings */
 .trainings {
