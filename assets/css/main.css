@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Playfair+Display&family=Poppins&family=Source+Sans+Pro&display=swap"); */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap");
 @import url("fontawesome-all.min.css");
 
 /*
@@ -3202,10 +3202,11 @@ body.homepage #header {
 }
 #header h1 a {
   font-size: 3rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 700;
   letter-spacing: .05em;
   color: black;
+  font-family: 'Playfair Display', serif;
 }
 #header .inner {
   padding-top: 2rem;
@@ -3247,9 +3248,9 @@ body.homepage #header {
   left: 10%;
   width: 100%;
   height: 100%;
-  background: #36070Edc;
+  background: #992934;
   z-index: -1;
-  border-radius: 0 0 10% 0;
+  border-radius: 0 0 10% 0;2
 }
 .hero p {
 	text-align: left;
@@ -3276,7 +3277,7 @@ ul.icons > li {
 }
 .icons .soc-icons {
 	border-bottom: none;
-	color: #540f19;
+	color: #992934;
 }
 .icons .soc-icons:hover {
 	color: inherit;
@@ -3507,7 +3508,8 @@ ul.icons > li {
 	display: block;
 }
 .education .card p {
-	background: #244822;
+	/* background: #244822; */
+  background: #992934;
 	color: white;
 	padding: 1rem;
 	font-size: .9rem;
@@ -3556,10 +3558,12 @@ ul.icons > li {
 	flex-basis: 80%;
 }
 .publication .category {
-	border: 1px solid #244822;
+	/* border: 1px solid #244822; */
+  border: 1px solid #992934;
 	border-radius: 5px;
 	padding: .3rem 1rem;
-	background: #244822;
+	/* background: #244822; */
+  background: #992934;
 	color: white;
 	font-size: .8rem;
 }
@@ -3669,7 +3673,8 @@ h3.title {
 	display: block;
 }
 .extensions .card p {
-	background: #244822;
+	/* background: #244822; */
+  background: #992934;
 	color: white;
 	padding: 1rem;
 	font-size: .9rem;
@@ -3731,7 +3736,8 @@ h3.title {
 .inner header h2 {
 	font-size: 2rem;
 	margin-top: 1rem;
-	color: #650f1c;
+	color: #992934;
+  font-family: 'Playfair Display', serif;
 }
 .lower {
   text-transform: lowercase;
@@ -3782,7 +3788,8 @@ strong {
 	display: block;
 }
 .trainings .card p {
-	background: #244822;
+	/* background: #244822; */
+  background: #992934;
 	color: white;
 	padding: 1rem;
 	font-size: .9rem;
