@@ -2183,7 +2183,7 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		/* background-image: url("../../images/header.jpg"); */
+		/* background-image: linear-gradient(rgba(0, 0, 0, 0.283) 100%, url("../../images/carnegie-photo-1.jpg")); */
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
@@ -2192,6 +2192,9 @@ input, select, textarea {
 		padding: 7.5em 0 2em 0;
 		cursor: default;
 	}
+  .homepage #header {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("../../images/carnegie-photo-1.jpg") no-repeat center center;
+  }
 
 		#header:before {
 			content: '';
@@ -3196,8 +3199,15 @@ body.homepage #header {
   gap: 7rem;
   text-align: left;
 }
+.homepage .hero {
+  justify-content: flex-start;
+}
 .hero > div:first-child {
 	width: 50%;
+  padding-top: 5%;
+}
+.homepage .hero > div:first-child {
+	width: 70%;
   padding-top: 5%;
 }
 #header h1 a {
@@ -3208,11 +3218,25 @@ body.homepage #header {
   color: black;
   font-family: 'Playfair Display', serif;
 }
+.homepage #header h1 a {
+  color: rgb(255, 255, 255);
+}
+.homepage #header .inner {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
 #header .inner {
   padding-top: 2rem;
 }
 #header h1 {
   margin-bottom: 1rem;
+}
+.homepage #header p,
+.homepage #header h1 {
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
 .hero > div {
 	width: 20%;
@@ -3278,6 +3302,7 @@ ul.icons > li {
 .icons .soc-icons {
 	border-bottom: none;
 	color: #992934;
+  color: white;
 }
 .icons .soc-icons:hover {
 	color: inherit;
@@ -3800,4 +3825,48 @@ strong {
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+}
+
+/* Homepage key achievements */
+.homepage .keyachievements.carousel h3 {
+  font-size: 1rem;
+}
+
+/* Proglang Tooltip */
+.prog-lang .lang::after {
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: .7rem;
+  color: white;
+  background: #244822;
+  padding: 0 1em;
+  border-radius: 5px;
+  opacity: 0;
+}
+.prog-lang > div:hover.lang::after {
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
+.prog-lang > div {
+  position: relative;
+}
+.prog-lang .java::after {
+  content: 'Java';
+}
+.prog-lang .python::after {
+  content: 'Python';
+}
+.prog-lang .c::after {
+  content: 'C';
+}
+.prog-lang .cplusplus::after {
+  content: 'C++';
+}
+.prog-lang .html::after {
+  content: 'HTML';
+}
+.prog-lang .javascript::after {
+  content: 'Javascript';
 }
