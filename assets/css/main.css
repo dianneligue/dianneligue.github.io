@@ -3501,6 +3501,9 @@ ul.icons > li {
 }
 
 /* Education */
+.education h2 {
+  font-size: 2rem;
+}
 .education .overview {
 	display: flex;
 	align-items: center;
@@ -3563,7 +3566,9 @@ ul.icons > li {
 	color: #244822;
 	line-height: 1rem;
 	width: fit-content;
-	margin-left: 1rem;
+	display: block;
+  margin: 0;
+  margin-top: 0.5rem
 }
 /* Publication */
 .publication {
