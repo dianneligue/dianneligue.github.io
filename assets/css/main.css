@@ -3992,3 +3992,8 @@ strong {
   gap: 1rem;
   margin-bottom: .5rem;
 }
+
+/* Extensions talks */
+.ext.container {
+  margin-top: 3rem;
+}
