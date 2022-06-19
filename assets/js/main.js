@@ -215,3 +215,23 @@
 		});
 
 })(jQuery);
+
+// Courses popup
+const popupsOpen = document.querySelectorAll('.courses .open')
+popupsOpen.forEach(a => {
+  a.addEventListener('click', open)
+})
+function open(e) {
+  e.target.parentNode.querySelector('.popup').classList.add('show')
+}
+
+const popupsClose = document.querySelectorAll('.courses .popup .bg');
+popupsClose.forEach(a => {
+  a.addEventListener('click', close)
+})
+function close() {
+  const popups = document.querySelectorAll('.courses .popup')
+  Array.from(popups).forEach(a => {
+    a.classList.remove('show')
+  })  
+}

@@ -3902,3 +3902,90 @@ strong {
 .prog-lang .javascript::after {
   content: 'Javascript';
 }
+/* More details */
+.courses > article {
+  position: relative;
+}
+.courses .more-details {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.courses .more-details > .bg {
+  background: rgba(0, 0, 0, 0.507);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+.courses .more-details .inner-box {
+  background: rgb(255, 255, 255);
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  padding: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.courses .photos {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+.courses .card img {
+	display: block;
+}
+.courses .popup {
+  transition: all 0.1s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  z-index: -1;
+}
+.courses .popup.show {
+  visibility: visible;
+  z-index: 200;
+  opacity: 1;
+}
+.courses .open {
+  background: transparent;
+  border:1px solid #244822;
+  transition: all 0.1s ease-in-out;
+}
+.courses .open:hover {
+  background: #244822;
+  border:1px solid #244822;
+  color: white;
+}
+.courses.current > article {
+  flex-basis: 80%;
+}
+.courses.current .tag {
+  border: 1px solid #244822;
+  border-radius: 5px;
+  padding: 0.1rem 0.5rem;
+  font-size: .8rem;
+  color: #244822;
+  line-height: 1rem;
+  width: fit-content;
+  display: block;
+}
+.courses.current h4,
+.courses.current .tag {
+  width: fit-content;
+  display: inline-block;
+  margin: 0;
+}
+.courses.current .title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: .5rem;
+}
