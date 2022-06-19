@@ -3338,6 +3338,9 @@ ul.icons > li {
 	line-height: 1.4;
 }
 /* About me */
+#about-me.wrapper {
+  padding-top: 2em;
+}
 #about-me .features {
 	display: flex;
 	flex-wrap: wrap;
