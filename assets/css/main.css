@@ -4131,6 +4131,9 @@ iframe {
     order: 2;
     text-align: center;
   }
+  .courses.current > article {
+    flex-basis: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
