@@ -4003,6 +4003,9 @@ strong {
 iframe {
   max-width: 100%;
 }
+.fb {
+  text-align: center;
+}
 
 
 /* Media queries */
@@ -4075,6 +4078,7 @@ iframe {
   .extensions .smm  {
     justify-content: center;
     text-align: center;
+    flex-direction: column;
   }
   .trainings .photos {
     text-align: center;
@@ -4120,6 +4124,9 @@ iframe {
   ol {
     padding-left: 0;
   }
+  .fb {
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -4149,7 +4156,9 @@ iframe {
   .trainings .card {
     width: 100%;
   }
-  .education .card {
+  .education .card,
+  .extensions .card {
     max-width: 100%;
   }
+  
 }
