@@ -4127,6 +4127,10 @@ iframe {
   .fb {
     margin-top: 1rem;
   }
+  .special .publication > div:first-child {
+    order: 2;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
