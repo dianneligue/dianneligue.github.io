@@ -4160,5 +4160,8 @@ iframe {
   .extensions .card {
     max-width: 100%;
   }
+  .fb iframe {
+    height: 105vw;
+  }
   
 }
