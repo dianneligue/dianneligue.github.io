@@ -2420,7 +2420,7 @@ input, select, textarea {
 	#banner {
 		background: #fff;
 		text-align: center;
-		padding: 4.5em 0 4.5em 0;
+		padding: 3em 0 3em 0;
 		margin-bottom: 0;
 	}
 
@@ -2600,6 +2600,7 @@ input, select, textarea {
 		.carousel article {
 			display: inline-block;
 			width: 18em;
+			height: 22em;
 			background: #fff;
 			text-align: center;
 			padding: 0 1em 3em 1em;
@@ -2804,6 +2805,8 @@ input, select, textarea {
 
 			.image.featured {
 				margin: 0 0 2em 0;
+				width: 18em;
+				height: 15em
 			}
 
 			.image.left {
