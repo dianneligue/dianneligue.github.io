@@ -3194,10 +3194,14 @@ body.homepage #header {
     /* height: auto; */
 }
 .hero {
-	display: flex;
-	justify-content: center;
+  display:flex;
+  justify-content: left;
   gap: 7rem;
   text-align: left;
+  width: 80%;
+  position: absolute;
+  left: 5%;
+  bottom: 10%
 }
 .homepage .hero {
   justify-content: flex-start;
@@ -3238,7 +3242,7 @@ body.homepage #header {
   text-shadow: 2px 2px 4px black;
 }
 .hero > div {
-	width: 20%;
+	width: 100%;
 }
 .hero img {
 	max-width: 100%;
